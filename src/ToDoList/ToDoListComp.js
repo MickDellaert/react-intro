@@ -1,9 +1,15 @@
 import React from 'react';
 import ToDoListItem from "./ToDoListItem";
 
-const ToDoListComp = () => {
+const ToDoListComp = ({todos}) => {
+
     return (
-        <ToDoListItem/>
+        <ul className="todo-list-container">
+            {todos.map((todo) => (
+                <ToDoListItem key={todo.id} todo={todo}/>
+            ))}
+            {console.log(todos)}
+        </ul>
     );
 };
 

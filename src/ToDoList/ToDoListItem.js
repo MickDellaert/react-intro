@@ -1,16 +1,13 @@
 import React from 'react';
 
-const ToDoListComp = () => {
+const ToDoListItem = ({todo}) => {
+
     return (
-        <ul>
-            <li>
-                <input type="checkbox" /> My first todo
-            </li>
-            <li>
-                <input type="checkbox" /> My second todo
-            </li>
-        </ul>
+        <li className="todo-list-item">
+            <input type="checkbox" checked={todo.complete}/>
+            {todo.name}
+        </li>
     );
 };
 
-export default ToDoListComp;
+export default ToDoListItem;

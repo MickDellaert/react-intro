@@ -1,8 +1,13 @@
 import React from 'react';
 
-const ToDoInputField = () => {
+const ToDoInputField = ({inputRef}) => {
     return (
-        <input type="text" name="to-do-input" placeholder="Type a new to do"/>
+        <input
+            ref={inputRef}
+            type="text"
+            name="to-do-input"
+            placeholder="Type a new to do"
+        />
     );
 };
 

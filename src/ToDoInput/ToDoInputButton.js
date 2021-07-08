@@ -1,8 +1,9 @@
 import React from 'react';
 
-const ToDoInputButton = () => {
+const ToDoInputButton = ({addTodo}) => {
+
     return (
-        <button type="submit">Add a to do</button>
+        <button onClick={addTodo}>Add a to do</button>
     );
 };
 
