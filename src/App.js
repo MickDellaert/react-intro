@@ -4,17 +4,16 @@ import Header from "./Header";
 import ToDoInputComp from "./ToDoInput/ToDoInputComp";
 import ToDoListComp from "./ToDoList/ToDoListComp";
 
-function App() {
+const App = () => {
 
     const initialTodos = [
         { id: 1, name: "My first todo", complete: true},
-        {id: 2, name: "My second todo", complete: false}
-        ];
+        {id: 2, name: "My second todo", complete: false},
+        {id: 3, name: "My third todo", complete: false}
+
+    ];
 
     const [todos, setTodos] = useState(initialTodos);
-
-
-
 
     return (
         <div className="App">
