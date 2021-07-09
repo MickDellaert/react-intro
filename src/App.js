@@ -21,7 +21,6 @@ const App = () => {
         if (storeditems) setTodos(storeditems)
     }, [])
 
-
     useEffect(() => {
         window.localStorage.setItem(LSKEY + ".todos", JSON.stringify(todos));
     }, [todos]);

@@ -17,7 +17,8 @@ const ToDoInputComp = ({todos, setTodos}) => {
         inputRef.current.value = null;
 
         // First making a clone and adding a new to do to the new state, still need to change the key so it's a unique value TODO
-        setTodos([...todos, {id: uuid4(), name: newTodo, complete: false}])
+        let newTodos = JSON.parse(JSON.stringify(todos))
+        setTodos([...newTodos, {id: uuid4(), name: newTodo, complete: false}])
 
         // Not sure if I am making a clone in a good way here, also not sure about the JSON.parse TODO
         // let parseTodos = JSON.parse(JSON.stringify(newTodos));
