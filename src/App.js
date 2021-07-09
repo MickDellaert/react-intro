@@ -33,7 +33,6 @@ const App = () => {
             <div className="content">
                 <ToDoInputComp todos={todos} setTodos={setTodos}/>
                 <ToDoListComp todos={todos} setTodos={setTodos}/>
-                <ToDoListComp todos={todos} setTodos={setTodos}/>
             </div>
 
         </div>
