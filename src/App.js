@@ -21,6 +21,7 @@ const App = () => {
         if (storeditems) setTodos(storeditems)
     }, [])
 
+
     useEffect(() => {
         window.localStorage.setItem(LSKEY + ".todos", JSON.stringify(todos));
     }, [todos]);
@@ -31,6 +32,7 @@ const App = () => {
             <Header/>
             <div className="content">
                 <ToDoInputComp todos={todos} setTodos={setTodos}/>
+                <ToDoListComp todos={todos} setTodos={setTodos}/>
                 <ToDoListComp todos={todos} setTodos={setTodos}/>
             </div>
 

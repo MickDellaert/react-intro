@@ -8,7 +8,9 @@ const ToDoListItem = ({todo, toggleTodo}) => {
 
     return (
         <li className="todo-list-item">
-            <input type="checkbox" checked={todo.complete} onChange={handleTodoClick}/>
+            <input type="checkbox"
+                   checked={todo.complete}
+                   onChange={handleTodoClick}/>
             {todo.name}
         </li>
     );

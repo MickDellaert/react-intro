@@ -3,6 +3,7 @@ import { v4 as uuid4 } from 'uuid';
 
 import ToDoInputButton from "./ToDoInputButton";
 import ToDoInputField from "./ToDoInputField";
+import ToDoDeleteButton from "./ToDoDeleteButton";
 
 const ToDoInputComp = ({todos, setTodos}) => {
 
@@ -26,12 +27,19 @@ const ToDoInputComp = ({todos, setTodos}) => {
         }
 
 
+    const deleteTodo = () => {
+        let deleteTodos = todos.filter(todo => !todo.complete);
+        setTodos(deleteTodos);
+    }
+
+
     // Got stuck here for a very long time, trying to access the addTodo function from the onClick inside the ToDoInputButton child component and displaying a console.log message, turns out it was because of the return in here, the parent, being wrapped inside a form tag. Replacing it by a regular div made it work. Need to look into this TODO
     return (
         <div className="todo-form-container">
         <div>
             <ToDoInputField inputRef={inputRef}/>
             <ToDoInputButton addTodo={addTodo}/>
+            <ToDoDeleteButton deleteTodo={deleteTodo}/>
         </div>
         </div>
     );
