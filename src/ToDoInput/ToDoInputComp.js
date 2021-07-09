@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useRef} from 'react';
 
 import ToDoInputButton from "./ToDoInputButton";
 import ToDoInputField from "./ToDoInputField";
@@ -9,10 +9,10 @@ const ToDoInputComp = ({todos, setTodos}) => {
     const addTodo = () => {
 
         // Adding a new to do from the inputfield using the useRef hook
-        let newTodo = inputRef.current
+        let newTodo = inputRef.current.value
 
         // First making a clone and adding a new to do to the new state, still need to change the key so it's a unique value TODO
-        let newTodos = [...todos, {id: 4, name: newTodo.value, complete: false}]
+        let newTodos = [...todos, {id: 4, name: newTodo, complete: false}]
 
         // Not sure if I am making a clone in a good way here, also not sure about the JSON.parse TODO
         // let parseTodos = JSON.parse(JSON.stringify(newTodos));
