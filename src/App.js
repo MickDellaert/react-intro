@@ -28,9 +28,9 @@ const App = () => {
 
     return (
 
-        <div className="container mx-auto mt-8 max-w-screen-xl bg-white rounded-xl shadow-md flex flex-col">
+        <div className="container mx-auto xl:mt-8 xl:mb-64 max-w-screen-xl bg-white rounded-xl shadow-lg flex flex-col">
             <Header/>
-            <div className="content  bg-green-100">
+            <div className="content bg-green-50 h-screen rounded-xl overflow-y-auto">
                 <ToDoInputComp todos={todos} setTodos={setTodos}/>
                 <ToDoListComp todos={todos} setTodos={setTodos}/>
             </div>

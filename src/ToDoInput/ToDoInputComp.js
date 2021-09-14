@@ -35,11 +35,11 @@ const ToDoInputComp = ({todos, setTodos}) => {
 
     // Got stuck here for a very long time, trying to access the addTodo function from the onClick inside the ToDoInputButton child component and displaying a console.log message, turns out it was because of the return in here, the parent, being wrapped inside a form tag. Replacing it by a regular div made it work. Need to look into this TODO
     return (
-        <div className="todo-form-container px-4 pt-8 flex flex-col justify-items-center sm:flex-row justify-around">
-            <div className="md:mx-auto">
+        <div className="todo-form-container my-8 lg:mx-44 md:px-16 lg:px-0 xl:px-0 flex flex-col justify-items-center sm:flex-row justify-between">
+            <div className="mx-3 md:mx-0">
             <ToDoInputField inputRef={inputRef}/>
             </div>
-            <div className="mx-auto">
+            <div className="mx-auto sm:mx-0">
             <ToDoInputButton addTodo={addTodo}/>
             <ToDoDeleteButton deleteTodo={deleteTodo}/>
             </div>

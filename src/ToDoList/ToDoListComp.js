@@ -11,7 +11,7 @@ const ToDoListComp = ({todos, setTodos}) => {
     }
 
     return (
-        <ul className="todo-list-container flex flex-col lg:mx-44 px-4 md:px-16 lg:px-32 bg-green-200 rounded-xl py-8 my-8 sha">
+        <ul className="todo-list-container flex flex-col lg:mx-44 px-4 md:px-16 lg:px-16 bg-green-200 rounded-xl py-8 my-8 ">
             <div className="flex ">
                 <div>To Do: {todos.filter(todo => !todo.complete).length} </div>
                 <div>Completed: {todos.filter(todo => todo.complete).length}</div>
