@@ -30,7 +30,7 @@ const App = () => {
 
         <div className="container mx-auto mt-8 max-w-screen-xl bg-white rounded-xl shadow-md flex flex-col">
             <Header/>
-            <div className="content  bg-green-50">
+            <div className="content  bg-green-100">
                 <ToDoInputComp todos={todos} setTodos={setTodos}/>
                 <ToDoListComp todos={todos} setTodos={setTodos}/>
             </div>
