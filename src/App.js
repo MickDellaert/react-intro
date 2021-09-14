@@ -18,7 +18,7 @@ const App = () => {
 
     useEffect(()=> {
         const storeditems = JSON.parse(localStorage.getItem(LSKEY + ".todos"))
-        if (storeditems) setTodos(storeditems)
+        if (storeditems) setTodos (storeditems)
     }, [])
 
 
@@ -28,9 +28,9 @@ const App = () => {
 
     return (
 
-        <div className="App">
+        <div className="container mx-auto mt-8 max-w-screen-xl bg-white rounded-xl shadow-md flex flex-col">
             <Header/>
-            <div className="content">
+            <div className="content  bg-green-50">
                 <ToDoInputComp todos={todos} setTodos={setTodos}/>
                 <ToDoListComp todos={todos} setTodos={setTodos}/>
             </div>

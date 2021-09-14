@@ -1,4 +1,21 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -82,4 +99,4 @@ button {
   background-color: #e7efef;
   color: #5ca0a0;
   font-size: 20px;
-}
+} */

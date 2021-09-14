@@ -11,8 +11,8 @@ const ToDoListComp = ({todos, setTodos}) => {
     }
 
     return (
-        <ul className="todo-list-container">
-            <div>To Do: {todos.filter(todo => !todo.complete).length} Completed: {todos.filter(todo => todo.complete).length}
+        <ul className="todo-list-container flex flex-col">
+            <div className="flex justify-center">To Do: {todos.filter(todo => !todo.complete).length} Completed: {todos.filter(todo => todo.complete).length}
             </div>
 
             {todos.map((todo) => (

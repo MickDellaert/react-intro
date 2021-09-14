@@ -7,11 +7,11 @@ const ToDoListItem = ({todo, toggleTodo}) => {
     }
 
     return (
-        <li className="todo-list-item">
+        <li className="todo-list-item my-3 md:mx-32 p-3 overflow-hidden rounded-lg shadow-lg  bg-white flex ">
             <input type="checkbox"
                    checked={todo.complete}
                    onChange={handleTodoClick}/>
-            {todo.name}
+            <div className="m-3">{todo.name}</div>
         </li>
     );
 };
