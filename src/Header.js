@@ -8,7 +8,7 @@ const Title = () => {
 const Header = () => {
     return (
         <header>
-        <div className="bg-gray-800 p-4 xl:rounded-t-2xl text-white">
+        <div className="bg-gray-700 p-4 2xl:rounded-t-2xl text-white">
             <Title />
         </div>
         </header>

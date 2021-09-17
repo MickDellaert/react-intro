@@ -11,7 +11,7 @@ const App = () => {
     const initialTodos = [
         {id: 1, name: "My first todo", complete: true},
         {id: 2, name: "My second todo", complete: false},
-        {id: 3, name: "My third todo", complete: false}
+        {id: 3, name: "My third todo", complete: false},
     ];
 
     const [todos, setTodos] = useState(initialTodos);
@@ -28,9 +28,9 @@ const App = () => {
 
     return (
 
-        <div className="container mx-auto xl:mt-8 xl:mb-64 max-w-screen-xl bg-white rounded-xl shadow-lg flex flex-col">
+        <div className="container mx-auto 2xl:mt-8 h-screen 2xl:h-auto max-w-screen-xl bg-white 2xl:rounded-2xl shadow-lg flex flex-col">
             <Header/>
-            <div className="content bg-green-50 h-screen rounded-xl overflow-y-auto">
+            <div className="content bg-green-50 h-screen 2xl:h-auto 2xl:rounded-2xl overflow-y-auto">
                 <ToDoInputComp todos={todos} setTodos={setTodos}/>
                 <ToDoListComp todos={todos} setTodos={setTodos}/>
             </div>
