@@ -2,7 +2,7 @@ import React from 'react';
 
 const Title = () => {
     const headerTitle = "My Todo App";
-    return <h1 className="text-2xl">{headerTitle}</h1>;
+    return <h1 className="text-2xl ml-6">{headerTitle}</h1>;
 };
 
 const Header = () => {

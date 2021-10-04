@@ -7,7 +7,7 @@ const ToDoInputButton = ({ addTodo }) => {
       rounded-full focus:shadow-outline hover:bg-yellow-600"
       onClick={addTodo}
     >
-      Add a to do
+      Add todo
     </button>
   );
 };

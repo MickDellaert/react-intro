@@ -7,7 +7,7 @@ const ToDoInputField = ({ inputRef }) => {
       ref={inputRef}
       type="text"
       name="to-do-input"
-      placeholder="Type a new to do"
+      placeholder="Type a new todo"
     />
   );
 };
