@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Title = () => {
-    const headerTitle = "My Todo App";
+    const headerTitle = "Reminder App";
     return <h1 className="text-2xl ml-6">{headerTitle}</h1>;
 };
 
